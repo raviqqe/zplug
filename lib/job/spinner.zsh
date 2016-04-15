@@ -50,7 +50,7 @@ __zplug::job::spinner::spinner() {
 
     tput cnorm
     awk 'END { fflush() }'
-    printf "\r\033[0K"
+    __zplug::print::print::put "\r\033[0K"
     set -m
 }
 
